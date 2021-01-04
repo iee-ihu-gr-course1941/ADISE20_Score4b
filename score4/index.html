@@ -1,0 +1,34 @@
+<?php include_once 'lib/DBconnect.php';
+?>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>ΑΔΙΣΕ: Score4 Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mychess.css" rel="stylesheet">
+<script src="bootstrap/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+	<script src="js/myscore4.js"></script>
+</head>
+<body>
+<p>Hello</p>
+<div id='chess_board'>
+<?php 
+	$txt1 = "Learn PHP";
+	echo "<h2>" . $txt1 . "</h2>";
+	$sql="SELECT * FROM player;";
+	$result = mysqli_query($conn,$sql);
+	$resultCheck = mysqli_num_rows($result);
+echo "Hello world!<br>";
+	
+		?>
+</div>
+</body>
+</html>
